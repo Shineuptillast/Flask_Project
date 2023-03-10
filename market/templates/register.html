@@ -1,0 +1,42 @@
+{% extends 'base_layout.html' %}
+
+{% block title %}
+    Register Page
+{% endblock %}
+
+{% block content %}
+<body class="text-center">
+    <div class="container">
+        <form method="POST" class="form-register" style="color:white">
+            {{ form.hidden_tag() }}
+            <br>
+            <img class="mb-4" src="https://previews.123rf.com/images/hrlines/hrlines1903/hrlines190300070/118710772-vegetable-market-logo-vector-icon-element-and-template-for-company.jpg" alt="Image" style="width:150px; border-radius:5rem">
+            <h1 class="h3 mb-3 font-weight-normal">
+                Please Create your Account
+            </h1>
+
+            {{ form.username.label() }}
+            {{ form.username(class="form-control", placeholder="username") }}
+            <br>
+
+            {{ form.email_address.label() }}
+            {{ form.email_address(class="form-control", placeholder="Email Address") }}
+             <br>
+            {{ form.password1.label() }}
+            {{ form.password1(class="form-control", placeholder="Password") }}
+             <br>
+            {{ form.password2.label() }}
+            {{ form.password2(class="form-control", placeholder="Password") }}
+            <br>
+            <div class="checkbox mb-3">
+               <h6>Already have an account?</h6>
+               <a class="btn btn-sm btn-secondary" href="{{ url_for('login_page') }}">Log In</a>
+            </div>
+
+            {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+
+        </form>
+
+    </div>
+</body>
+{% endblock %}
