@@ -13,7 +13,7 @@ farmer can keep track of his selling power and how much time and money he can sa
 ## Market Interface
 ![image](https://user-images.githubusercontent.com/90482311/224559131-9aef41bd-e6d4-4e40-9b70-28b0ce37b1c4.png)
 
-User has the capability to create his account and starts selling, it will provide a farmer wider audience to sell to. 
+User has the capability to create his account and starts selling, it will provide farmer a wider audience to cater to. 
 
 ## Create an account to start selling
 ![image](https://user-images.githubusercontent.com/90482311/224559267-3563f341-3409-431f-8f42-2df299681f4c.png)
